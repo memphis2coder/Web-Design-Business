@@ -1,61 +1,81 @@
 /* global styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    font-family: sans-serif;
-    font-size: 17px;
-}
-li {
-    list-style-type: none;
+  font-family: sans-serif;
+  font-size: 17px;
 }
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* header styles */
 header {
-    border: 1px solid black;
-    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.navbar {
+  font-size: 18px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+.main-nav {
+  list-style-type: none;
+}
+.nav-links,
+.logo {
+  text-decoration: none;
+  color: black;
+}
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
 }
 .logo {
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: black;
-    order: 1;
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
 }
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+.navbar-toggle {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+  color: black;
+  font-size: 18px;
 }
-#menu {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    order: 3;
-    padding-top: 1rem;
+.main-nav {
+  list-style-type: none;
+  display: none;
 }
-@media screen and (max-width: 600px) {
-    #menu {
+.active {
+  display: block;
+}
+/* Desktop Menu */
+@media screen and (min-width: 768px) {
+    .navbar-toggle {
         display: none;
     }
-}
-.menu-link {
-    background-color: grey;
-    padding: 1rem;
-}
-.menu-link a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-.toggle {
-    padding: 1rem;
-    order: 2;
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 70px;
+        padding-bottom: 0;
+    }
+    .logo {
+        margin-top: 0;
+    }
+    .main-nav {
+        display: flex;
+        margin-right: 20px;
+    }
+    .nav-links {
+        margin-left: 20px;
+    }
 }
