@@ -1,4 +1,27 @@
 #hero {
     background-color: var(--main-bg-color);
     height: 500px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+#hero h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+#hero p {
+    margin: 0 2rem;
+    line-height: 2rem;
+    color: var(--secondary-text-color)
+}
+
+/* Desktop Menu */
+@media screen and (min-width: 768px) {
+    #hero h1 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    #hero p {
+        font-size: 1.5rem;
+    }
 }

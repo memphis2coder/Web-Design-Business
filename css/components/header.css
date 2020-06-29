@@ -1,6 +1,8 @@
 /* header styles */
 header {
+  padding: 10px 0;
   background-color: var(--main-bg-color);
+  border-bottom: 1px solid var(--main-text-color);
 }
 .navbar {
   font-size: 18px;
@@ -31,7 +33,7 @@ header {
 }
 .navbar-toggle {
   position: absolute;
-  top: 15px;
+  top: 25px;
   right: 20px;
   cursor: pointer;
   color: black;
@@ -46,6 +48,9 @@ header {
 }
 /* Desktop Menu */
 @media screen and (min-width: 768px) {
+  header {
+    border-bottom: none;
+  }
     .navbar-toggle {
         display: none;
     }

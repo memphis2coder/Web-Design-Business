@@ -1,11 +1,13 @@
 /* components */
 @import "./components/header.css";
 @import "./components/hero.css";
+@import "./components/analyze.css";
 
 /* colors */
 :root {
-  --main-text-color: #363636;
-  --main-bg-color: #84a9ac;
+  --main-text-color: #37383c;
+  --secondary-text-color: #6b7c93;
+  --main-bg-color: #87dfd6;
 }
 
 /* global styles */
@@ -22,6 +24,31 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 1rem;
+}
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+p {
+  color: var(--secondary-text-color)
+}
+/* Desktop Menu */
+@media screen and (min-width: 768px) {
+  h1 {
+      font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+      font-size: 1.5rem;
+  }
+  .container {
+    padding: 0;
+  }
 }
 
 
