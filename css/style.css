@@ -8,6 +8,7 @@
   --main-text-color: #37383c;
   --secondary-text-color: #6b7c93;
   --main-bg-color: #87dfd6;
+  --purple-color: #6C63FF;
 }
 
 /* global styles */
@@ -32,8 +33,12 @@ h1 {
 h2 {
   font-size: 1.5rem;
 }
+h3 {
+  font-size: 1.4rem;
+}
 p {
-  color: var(--secondary-text-color)
+  color: var(--secondary-text-color);
+  line-height: 2rem;
 }
 /* Desktop Menu */
 @media screen and (min-width: 768px) {
@@ -43,8 +48,12 @@ p {
   h2 {
     font-size: 2rem;
   }
+  h3 {
+    font-size: 1.5rem;
+  }
   p {
       font-size: 1.5rem;
+      line-height: 2rem;
   }
   .container {
     padding: 0;

@@ -1,7 +1,62 @@
 #analyze {
-    text-align: center;
-    height: 400px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
+
 #analyze h2 {
-    margin-top: 5rem;
+    text-align: center;
+}
+
+#analyze p {
+    margin-top: 2rem;
+}
+
+#analyze .row {
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#analyze .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+/* change order on mobile */
+#analyze .second {
+    order: 2;
+}
+
+#analyze img {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Desktop Menu */
+@media screen and (min-width: 768px) {
+    #analyze .row {
+        margin-top: 4rem;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    /* change order on desktop */
+    #analyze .second {
+        order: 0;
+    }
+
+    #analyze .text {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #analyze .number {
+        margin-right: auto;
+    }
 }
