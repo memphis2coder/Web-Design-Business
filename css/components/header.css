@@ -1,21 +1,6 @@
-/* global styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: sans-serif;
-  font-size: 17px;
-}
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 /* header styles */
 header {
-    border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: var(--main-bg-color);
 }
 .navbar {
   font-size: 18px;
@@ -30,6 +15,9 @@ header {
 .logo {
   text-decoration: none;
   color: black;
+}
+.nav-links:hover {
+    color: lightgrey;
 }
 .main-nav li {
   text-align: center;

@@ -1,0 +1,28 @@
+/* components */
+@import "./components/header.css";
+@import "./components/hero.css";
+
+/* colors */
+:root {
+  --main-text-color: #363636;
+  --main-bg-color: #84a9ac;
+}
+
+/* global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  font-size: 17px;
+  color: var(--main-text-color);
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
