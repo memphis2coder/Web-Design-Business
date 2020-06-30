@@ -2,6 +2,8 @@
 @import "./components/header.css";
 @import "./components/hero.css";
 @import "./components/analyze.css";
+@import "./components/banner.css";
+
 
 /* colors */
 :root {
@@ -9,6 +11,7 @@
   --secondary-text-color: #6b7c93;
   --main-bg-color: #87dfd6;
   --purple-color: #6C63FF;
+  --white-color: #f7f7f7;
 }
 
 /* global styles */
@@ -49,7 +52,7 @@ p {
     font-size: 2rem;
   }
   h3 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
   p {
       font-size: 1.5rem;

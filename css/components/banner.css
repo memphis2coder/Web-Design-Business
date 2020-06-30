@@ -1,0 +1,34 @@
+#banner {
+    background-color: var(--purple-color);
+    padding: 5rem 0;
+    text-align: center;
+    color: var(--white-color);
+}
+
+#banner .spacer {
+    margin-top: 2rem;
+}
+
+#banner p {
+    margin-top: .5rem;
+    color: var(--main-text-color);
+}
+
+
+#banner .row {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* Desktop Menu */
+@media screen and (min-width: 768px) {
+    #banner .row {
+        flex-direction: row;
+    }
+    #banner .spacer {
+        margin-top: 0;
+    }
+}

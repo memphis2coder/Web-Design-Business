@@ -1,5 +1,5 @@
 #hero {
-    background-color: var(--main-bg-color);
+    background-color: var(--purple-color);
     height: 500px;
     display: flex;
     text-align: center;
@@ -11,7 +11,7 @@
 }
 #hero p {
     margin: 0 2rem;
-    color: var(--secondary-text-color)
+    color: var(--white-color)
 }
 
 /* Desktop Menu */

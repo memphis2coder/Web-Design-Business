@@ -1,8 +1,8 @@
 /* header styles */
 header {
   padding: 10px 0;
-  background-color: var(--main-bg-color);
-  border-bottom: 1px solid var(--main-text-color);
+  background-color: var(--purple-color);
+  border-bottom: 1px solid var(--purple-color);
 }
 .navbar {
   font-size: 18px;
