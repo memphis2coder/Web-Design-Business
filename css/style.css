@@ -3,7 +3,7 @@
 @import "./components/hero.css";
 @import "./components/analyze.css";
 @import "./components/banner.css";
-
+@import "./components/cta.css";
 
 /* colors */
 :root {
@@ -43,6 +43,30 @@ p {
   color: var(--secondary-text-color);
   line-height: 2rem;
 }
+
+/* button to scroll to top of page styles */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  z-index: 99;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: var(--purple-color);
+  color: var(--main-text-color);
+}
+
+
 /* Desktop Menu */
 @media screen and (min-width: 768px) {
   h1 {
