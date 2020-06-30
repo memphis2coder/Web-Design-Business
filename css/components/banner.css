@@ -14,13 +14,19 @@
     color: var(--main-text-color);
 }
 
-
 #banner .row {
     margin-top: 4rem;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+#banner .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
 }
 
 /* Desktop Menu */
