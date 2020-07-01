@@ -59,6 +59,48 @@
     margin-bottom: 5rem;
 }
 
+/* additional section style */
+#additional {
+    padding: 4rem 0;
+    background-color: var(--purple-color);
+}
+
+#additional h2 {
+    text-align: center;
+    color: var(--white-color);
+    padding-bottom: 2rem;
+}
+
+#additional h3 {
+    margin-bottom: .5rem;
+}
+
+#additional .spacer {
+    margin-top: 3rem;
+}
+
+#additional ul {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+}
+
+#additional i {
+    margin-top: .2rem;
+    margin-right: .5rem;
+}
+
+#additional li {
+    color: var(--main-text-color);
+    display: flex;
+}
+
+#additional p {
+    color: var(--white-color);
+}
+
 /* Desktop View */
 @media screen and (min-width: 768px) {
     #hero-price .row {
@@ -71,5 +113,11 @@
     }
     #hero-price .text {
     order: 2;
+    }
+
+    /* additional styles */
+    #additional li {
+        color: var(--main-text-color);
+        display: flex;
     }
 }

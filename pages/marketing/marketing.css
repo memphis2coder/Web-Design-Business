@@ -13,6 +13,7 @@
 /* digital marketing section */
 #digital {
     padding: 5rem 0;
+    text-align: center;
 }
 
 #digital img {
@@ -26,9 +27,92 @@
     align-items: center;
 }
 
+#digital .col-1 {
+    flex-basis: 1;
+}
+#digital .col-1 h2 {
+    margin-bottom: 1rem;
+    color: var(--purple-color);
+}
+#digital .col-1 p {
+    text-align: left;
+}
+
+#digital .col-2 {
+    flex-basis: 1;
+}
+
+/* Bullet section styles */
+#bullet h2 {
+    text-align: center;
+    color: var(--purple-color);
+    margin-bottom: 5rem;
+}
+
+#bullet .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bullet .col-1 {
+    flex-basis: 1;
+}
+
+#bullet .col-2 {
+    flex-basis: 1;
+}
+
+#bullet .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 100%;
+    height: 250px;
+    padding: 1rem;
+    position: relative;
+    background-color: var(--grey-color);
+    margin-bottom: 3rem;
+}
+
+#bullet .card-icon {
+    position: absolute;
+    top: -40px;
+    left: -10px;
+    color: var(--purple-color);
+    font-size: 3rem;
+    background-color: white;
+    border-radius: 100%;
+    padding: 1rem;
+}
+
+#bullet .card-text {
+    padding-top: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 /* Desktop View */
 @media screen and (min-width: 768px) {
     #digital .row {
         flex-direction: row;
+    }
+
+    /* Bullet section styles */
+    #bullet .row {
+    flex-direction: row;
+    justify-content: space-evenly;
+    }
+
+    #bullet .card {
+        width: 500px;
+    }
+
+    #bullet .card-icon {
+        top: -40px;
+        left: -40px;
     }
 }
