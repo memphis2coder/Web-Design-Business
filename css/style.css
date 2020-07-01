@@ -4,6 +4,13 @@
 @import "./components/analyze.css";
 @import "./components/banner.css";
 @import "./components/cta.css";
+@import "./components/footer.css";
+
+/* Price Page Styles */
+@import "../pages/price/price.css";
+/* Marketing Page Styles */
+@import "../pages/marketing/marketing.css";
+
 
 /* colors */
 :root {
@@ -19,6 +26,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
 }
 body {
   font-family: sans-serif;
@@ -39,10 +49,33 @@ h2 {
 h3 {
   font-size: 1.4rem;
 }
+h4 {
+  font-size: 1rem;
+}
 p {
   color: var(--secondary-text-color);
   line-height: 2rem;
 }
+
+/* Button Styles */
+.btn {
+  margin-top: 4rem;
+  color: var(--white-color);
+  background-color: var(--purple-color);
+  outline: none;
+  font-size: 1.5rem;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn:hover {
+  transition: .5s ease-in-out;
+  color: var(--purple-color);
+  background-color: var(--white-color);
+} 
 
 /* button to scroll to top of page styles */
 #myBtn {
@@ -77,6 +110,9 @@ p {
   }
   h3 {
     font-size: 1.7rem;
+  }
+  h4 {
+    font-size: 1.4rem;
   }
   p {
       font-size: 1.5rem;

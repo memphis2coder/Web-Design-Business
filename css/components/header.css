@@ -13,13 +13,12 @@ header {
 .main-nav {
   list-style-type: none;
 }
-.nav-links,
-.logo {
+.nav-links {
   text-decoration: none;
   color: black;
 }
 .nav-links:hover {
-    color: lightgrey;
+    color: var(--white-color);
 }
 .main-nav li {
   text-align: center;
@@ -30,6 +29,7 @@ header {
   font-size: 22px;
   margin-top: 10px;
   margin-left: 20px;
+  font-weight: bold;
 }
 .navbar-toggle {
   position: absolute;

@@ -1,0 +1,34 @@
+.marketing-title {
+    padding: 5rem 0;
+    background-color: var(--purple-color);
+    text-align: center;
+}
+.marketing-title h4 {
+    margin-bottom: 1rem;
+}
+.marketing-title h1 {
+    color: var(--white-color);
+}
+
+/* digital marketing section */
+#digital {
+    padding: 5rem 0;
+}
+
+#digital img {
+    width: 80%;
+}
+
+#digital .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Desktop View */
+@media screen and (min-width: 768px) {
+    #digital .row {
+        flex-direction: row;
+    }
+}

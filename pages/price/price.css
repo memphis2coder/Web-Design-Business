@@ -1,0 +1,75 @@
+/* components */
+@import "../../css/components/header.css";
+
+.hero-price-title {
+    padding: 5rem 0;
+    background-color: var(--purple-color);
+}
+
+.hero-price-title h1 {
+    text-align: center;
+    color: var(--white-color);
+}
+
+#hero-price h4 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#hero-price h2 {
+    text-align: center;
+    color: var(--purple-color);
+}
+
+#hero-price img {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#hero-price .row {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hero-pirce .col-1 {
+    flex-basis: 1;
+}
+
+#hero-price .col-1 h2 {
+    margin-bottom: 1rem;
+}
+
+#hero-price .col-2 {
+    flex-basis: 1;
+}
+
+/* change order on mobile */
+#hero-price .second {
+    order: 2;
+}
+#hero-price .text {
+    order: 1;
+}
+
+/* button styles */
+#hero-price .button {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+/* Desktop View */
+@media screen and (min-width: 768px) {
+    #hero-price .row {
+        display: flex;
+        flex-direction: row;
+    }
+    /* change order on desktop */
+    #hero-price .second {
+    order: 1;
+    }
+    #hero-price .text {
+    order: 2;
+    }
+}
